@@ -1,0 +1,62 @@
+14.
+    a) A Java class can have multiple constructors, but each constructor must not
+    share the same amount of parameters. A java class that has multiple
+    constructors simply uses the constructor that applies to the amount of
+    parameters given when the class is declared.
+    b) Accessor and Mutator methods, when declared as protected cannot be
+    accessed outside of the parent class which could be potentially hazardous.
+15.
+    a)
+        i. RouteCode should be a string describing clearly where the journey began
+        and ended up
+        ii. Delay should be an integer or a float depending on the average length
+        of the delay.
+        iii. WeatherRelated will always either be true or false so the data type
+        should be boolean.
+    c)
+        T290
+        3
+        1
+
+16.
+    a) 4.5
+17.
+    a) Runner.java          Codes.java
+       |         |        |  codes    |
+       | code    |------->| transfer  |
+       | request |        | code to   |
+       |         |        | routeName |
+                                |
+                                |
+                                |
+                                v
+                           Runner.java
+18.
+    a) By inheritance, each of the classes can be extended by different classes
+    that "extend" the classes that we have already made. Inheritance takes all
+    of the functions and attributes from the classes they extend but can be under
+    different names and each of the functions can be replaced if need be if they
+    are redeclared in the new classes.
+    b)
+        i. Codes is dependent on journey.
+           Journey is independent.
+           TrainCompany is dependent on Journey for almost all functions.
+        ii. As different classes become more and more dependent, then changes
+        become rather difficult to make, since any changes may effect the way other
+        dependent classes perform. For example, if I alter the code in Journey to
+        be more simplistic, it may have unseen consequenes for how
+        TrainCompany.java interacts with it.
+19.
+    a and b) For starters, the codes class is fairly useless and truly inefficient. Not
+    only are the functions within it redundant since one could simply call
+    Codes.routeName if the routename variable wasn't private, but also, one could
+    simply add the routeName variable to the journey itself, and get rid of the
+    dependencies between allCodes and journey.
+20.
+    a) Just like some functions in both javascript and Java, such as x.search(y), or
+    indexOf() we are able to utilize the functions without understanding the
+    programming underlying the function. The same follows for functions of ArrayList.
+    Even though we do not understand the functions underlying code, we are able to use
+    them.
+    b) Using a premade class is usually more efficient, is made by better programmers,
+    has lots of useful premade functions, and makes the code cleaner.
